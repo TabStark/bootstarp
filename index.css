@@ -34,6 +34,35 @@ span i {
     box-shadow: 0px 0px 15px gray;  
 }
 
+
+
+.figure p{
+    text-align: justify;
+}
+
+.card-body p{
+    text-align: justify;
+}
+
+.lead{
+    text-align: justify;
+}
+
+#carouselExampleIndicators .my-4{
+    text-align: justify;
+}
+
+#secondslide .my-4{
+    text-align: justify;
+}
+
+#thirdslide .my-4{
+    text-align: justify;
+}
+
+#forthslide .my-4{
+    text-align: justify;
+}
 /* .w-100 {
     
     width: 70%!important;
