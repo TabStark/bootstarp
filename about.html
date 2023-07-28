@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Tektur:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="contact.html">
+    <link rel="stylesheet" href="product.html">
+    <link rel="stylesheet" href="project.html">
+
+    <title>StArc</title>
+  </head>
+  <body>
+
+    
+    <!-- navbar -->
+    <div class="sticky-sm-top">
+    <nav class="navbar navbar-light bg-light navbar-expand-lg ">
+      <div class="container-fluid  ">
+  
+  
+        <a class="navbar-brand fs-3" href="#">StArc</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link  fw-bold"  href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active  fw-bold" aria-current="page" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  fw-bold" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Others
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item " href="product.html">Shopping</a></li>
+                <li><a class="dropdown-item " href="project.html">projects</a></li>
+              </ul>
+            </li>
+          </ul>
+
+
+          <!-- Search bar -->
+          <div class="searchbar">
+            <!-- <div class="d-flex "> -->
+            <input class="search_input" type="text" placeholder="Search...">
+            <span><i class="fas fa-search"></i></span>
+            </div>
+
+          <button class="btn btn-outline-success mb-3 btn btn-light btn btn-outline-dark mx-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        <button class="btn btn-outline-success mb-3 btn btn-light btn btn-outline-dark mx-2" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
+      </div>
+      </div>
+    </nav>
+  </div>
+
+ <!--Login Modal -->
+<div class="modal fade " id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login to StArc</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+
+        <div class="input-group flex-nowrap my-2">
+          <p class="fs-6 mx-2 ">Username</p>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+
+        <div class="input-group flex-nowrap my-2">
+          <p class="fs-6  mx-2">Password&nbsp;</p>
+          <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signupModal"><a href="">Don't have an Account? Signup</a></button>
+        <button type="button" class="btn btn-dark">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Signup to StArc</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+
+        <div class="input-group flex-nowrap my-2">
+          <p class="fs-6 mx-2 ">First Name</p>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        
+        <div class="input-group flex-nowrap my-2">
+          <p class="fs-6  mx-2">Last Name&nbsp;</p>
+          <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+
+        <div class="input-group flex-nowrap my-2">
+          <p class="fs-6  mx-2">Email id &nbsp;&nbsp;&nbsp;</p>
+          <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+
+        <div class="input-group flex-nowrap my-2">
+          <p class="fs-6  mx-2">Password &nbsp;&nbsp;</p>
+          <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+
+        <div><p class="dropdown-divider"></p></div>
+        <p class="text-center">or</p>
+
+        <div class="container my-4 align-center d-flex flex-wrap justify-content-center align-items-center">
+          <button type="button" class="btn btn-light btn-lg btn btn-outline-dark btn fs-6 mx-2 my-2"><img src="images/google.png" alt="" class="mx-1">Sign with Google</button>
+          <span><button type="button" class="btn btn-light btn-lg btn btn-outline-dark fs-6 mx-2 my-2"><img src="images/apple.png" alt="" class="mx-1">Sign with Appleid</button></span>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal"><a href=""> Already have an Account? Login</a></button>
+        <button type="button" class="btn btn-dark">Signup</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+    <!-- Content -->
+    
+    <div class="container my-4">
+        <div class="uncont" style="padding-top: 47px;"><div class="vc_custom_heading_wrap "><div class="heading-text el-text text-light"><h1 class="font-202503 h1 fontspace-111509 font-weight-400"><span>We focus on quality, and excellent ‘<strong>design service</strong>’, as being the <em><strong>cornerstone</strong> </em>of our practice.</span></h1></div><div class="clear"></div></div></div>
+    </div>
+
+    <div class="container my-4">
+      <div class="card text-center d-flex justify-content-evenly flex-wrap" >
+        <div class="card-body">
+          <p class="card-text">
+          StArc Architects is known for their unique approach, to architecture and interior design,           which is a bespoke and very intimate process of discovering each client’s personal style. Over the past few years, StArc Architects has emerged as a leading full-service Luxury Architecture, Interior Design and Décor firm based in Mumbai and have been working across key cities in the country with clients including leaders in business, finance and industry, as well as society, film and politics. With a team of over 60 Architects and Interior Designers, the firm’s work encompasses projects across categories with work and clients spread all around leading cities in India and also select cities globally.</p>
+
+          <p>&nbsp;</p>
+            <p>StArc Architects is a multidisciplinary and multi award winning design firm led by Principal Architects Krupa Zubin and Zubin Zainuddin. StArc Architects is considered to be among the top 10 Architectural and Interior Design Firms of India. StArc Architects has been credited to be so by various leading Design Journals of the country. Creative and technical staff is grouped in teams that follow projects all the way through from concept to completion. Each team comprises of team leaders and team members with expertise in various aspects like project management, visualization, design development etc. A team of 60 plus architects and designers strive constantly to create projects that stand out because of the distinct approach towards design, detail and the latest technology. Research is critical to be competitive in an ever-evolving international design market.</p>
+
+            <p>&nbsp;</p>
+              <p>StArc Architects believes good design is produced from careful study and research, combined with technical knowledge and artistic judgment. Attention to detail, proportions and scale, together with common sense ensure the finished product fully develops the potential within the concept. Past and current projects include commercial, residential, health clubs, spas and salons, hospitality, pharmaceutical, exhibition, institutional, mixed-use and high end residential interior projects. Extensive use of CAD and computer 3D Modeling, which is done in house, helps the client to visualize their project in the best possible manner. All experimentation with space, light and material can then be done using this platform till the final result is achieved. StArc Architects offers integrated design services for the built environment, encompassing master planning, architectural, landscape,interior, lighting and furniture design.</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-secondary ">
+      <div class="container">
+        <span class="text-light">© 2023 StArc Ind All rights reserved...</span>
+      </div>
+    </footer>
+
+  
+  </html>
