@@ -2,12 +2,10 @@
     --bs-font-sans-serif:'Gideon Roman', cursive;
 }
 
-.col-md-6:hover{
-    /* transform: scale(1.1); */
+/* .col-md-6:hover{
     box-shadow: 0px 0px 15px gray;
     transition: .5s;
-
-}
+} */
 
 .searchbar{
     display: flex;
@@ -48,40 +46,168 @@ span i {
     text-align: justify;
 }
 
-#carouselExampleIndicators .my-4{
+.projectSlide p{
     text-align: justify;
 }
 
-#secondslide .my-4{
-    text-align: justify;
-}
-
-#thirdslide .my-4{
-    text-align: justify;
-}
-
-#forthslide .my-4{
-    text-align: justify;
-}
-/* .w-100 {
-    
-    width: 70%!important;
-
-} */
-
-/* .carousel-item {
-    position: relative;
-    display: none;
-    float: left;
-    width: 70%;
-    margin-right: -100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transition: transform .6s ease-in-out;
-} */
-
-/* .carousel-inner {
-   
+/* .container{
     width: 100%;
-    overflow: hidden;
+    height: 400px;
+
 } */
+
+
+/* Review */
+.comment{
+    margin: 25px 10px 10px 0px;
+    width: 80%;
+
+}
+
+.comment p{
+    margin-bottom: 0px;
+    margin-left: 10px;
+
+}
+
+.customerName{
+    margin-right: 10px;
+    
+    float: right;
+}
+
+/* Review First */
+
+.review{
+    display: flex;
+    flex-direction: row;
+    border-radius: 55px;
+    border: 2px solid white;
+    background-color: rgb(230, 230, 230);
+}
+
+.review img{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+}
+
+
+
+
+/* Review Two */
+
+.reviewtwo{
+    display: flex;
+    flex-direction: row;
+    border-radius: 55px;
+    border: 2px solid white;
+    background-color: rgb(230, 230, 230);
+}
+
+.reviewtwo img{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+}
+
+
+
+/* Review Three */
+
+.reviewthree{
+    display: flex;
+    flex-direction: row;
+    border-radius: 55px;
+    border: 2px solid white;
+    background-color: rgb(230, 230, 230);
+}
+
+.reviewthree img{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+}
+
+
+
+/* Review Four */
+
+.reviewfour{
+    display: flex;
+    flex-direction: row;
+    border-radius: 55px;
+    border: 2px solid white;
+    background-color: rgb(230, 230, 230);
+}
+
+.reviewfour img{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+}
+
+
+
+
+@media (max-width: 1200px){
+
+    .review img {
+        height: 131px;
+        width: 130px;
+        border-radius: 50%;
+    }
+
+    .reviewtwo img {
+        height: 155px;
+        width: 140px;
+        border-radius: 50%;
+    }
+
+    .reviewthree img {
+        height: 131px;
+        width: 130px;
+        border-radius: 50%;
+    }
+
+    .reviewfour img {
+        height: 131px;
+        width: 130px;
+        border-radius: 50%;
+    }
+
+    .comment{
+        margin: 25px 10px 10px 0px;
+        width: 80%;
+    
+    }
+}
+
+
+@media (max-width: 768px){
+
+    .review img {
+       display: none;
+
+    }
+
+    .reviewtwo img {
+        display: none;
+
+    }
+
+    .reviewthree img {
+        display: none;
+
+    }
+
+    .reviewfour img {
+        display: none;
+
+    }
+
+    .comment{
+        margin: 10px auto 10px auto
+    }
+
+}
